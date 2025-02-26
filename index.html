@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="game-container">
+			<h1>Number Guessing Game</h1>
+			<div class="card-container">
+				<p>
+					Guess number from <span class="number">1</span> to
+					<span class="number">100</span>
+				</p>
+			</div>
+			<div class="input-container">
+				<label for="user-input" class="input-label">Enter your guess: </label>
+				<input
+					type="number"
+					placeholder="Enter your guess"
+					id="user-input"
+					min="1"
+					max="100"
+				/>
+			</div>
+
+			<button id="guess-btn" class="btn guess-btn">Submit Guess</button>
+			<p id="message" class="message"></p>
+			<div class="card-container">
+				<span>Attempts: <span id="attempts-count">0</span></span>
+			</div>
+			<button id="new-game-btn" class="btn new-game-btn">New Game</button>
+		</div>
+		<script src="./index.js"></script>
+	</body>
+</html>
