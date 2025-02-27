@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Timer</title>
+		<link rel="stylesheet" href="output.css" />
+	</head>
+	<body>
+		<div
+			class="bg-lime-500 h-dvh flex flex-col items-center justify-center p-16 gap-5"
+		>
+			<h1 class="text-6xl text-white font-bold">Countdown Timer</h1>
+			<input
+				type="number"
+				class="border-2 border-white rounded-sm bg-white p-2 outline-none text-xl"
+				placeholder="Enter Minutes"
+				id="minutes"
+			/>
+			<div class="flex flex-row gap-8 items-center">
+				<button
+					class="bg-green-500 border-none text-white px-6 py-2 rounded-sm text-xl cursor-pointer flex items-center justify-center"
+					id="start-btn"
+				>
+					Start
+				</button>
+				<button
+					class="bg-red-500 border-none text-white px-6 py-2 rounded-sm text-xl cursor-pointer"
+					id="stop-btn"
+				>
+					Stop
+				</button>
+			</div>
+			<p class="text-9xl text-white font-bold" id="display">00:00</p>
+		</div>
+		<script src="./index.js"></script>
+	</body>
+</html>
