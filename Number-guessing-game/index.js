@@ -28,6 +28,7 @@ const handleGuessBtnClick = () => {
 		guessBtn.disabled = true;
 		userInput.disabled = true;
 	}
+	userInput.value = "";
 };
 
 const handleNewGameBtnClick = () => {
